@@ -1,0 +1,342 @@
+/*mobile first*/
+
+*{
+    box-sizing: border-box;
+}
+
+.container>*{
+    height: fit-content;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Star Wars font";
+    src: url("betu/Starjedi.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("betu/RobotoMono-Regular.ttf");
+}
+
+#hatter{
+    background-image: url("kepek/backgroundetc/skyharom.jpg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 750px;
+}
+
+body{
+    background-color: #000814;
+    margin: 0;
+    font-family: "Roboto Mono";
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*tagek*/
+
+header{
+    display: block;
+    padding: 5px 15px 5px 15px;
+    background-color: #001d3d;
+    text-align: center;
+    font-family: "Star Wars font";
+    color: #ffd60a;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px 5px white inset;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2, h3{
+    font-family: "Star Wars font";
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+article{
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    background-color: #001d3d;
+    padding: 30px;
+    color: #D9DCD6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white inset;
+}
+
+aside{
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #001d3d;
+    padding: 10px;
+    color: #D9DCD6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white inset;
+}
+
+aside img, article img{
+    display: flex;
+    flex: 1 1 100%;
+}
+
+p{
+    font-size: 20px;
+}
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Star Wars font";
+}
+
+footer{
+    background-color: rgba(0, 29, 61, 0.9);
+    color: #D9DCD6;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: "Star Wars font";
+    box-shadow: 0 0 10px 5px white inset;
+}
+
+/*menü*/
+
+nav{
+    padding: 0px;
+    flex: 1 1 100%;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 300px;
+    padding: 10px; 
+}
+
+nav ul li a.current{
+    background-color: #ffd60a;
+    color: #000814;
+}
+
+nav ul li a:hover{
+    background-color: #ffd60a;
+    color: #000814;
+}
+
+nav li a{
+    font-family: "Star Wars font";
+    font-size: 30px;
+    display: block;
+    color: #D9DCD6;
+    background-color: #003566;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 5px white inset;
+}
+
+td{
+    padding: 10px;
+}
+
+table img{
+    width: 40%;
+    height: 40%;
+    flex: 1 1 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    display: block;
+    margin: auto;
+    flex-direction: column;
+}
+
+.tablazat img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    display: block;
+    margin: auto;
+}
+
+/*classok stb*/
+
+.align{
+    flex-basis: 33%;
+}
+
+#desc{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.galleria{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+}
+
+#batuu{
+    width: 30%;
+    height: 30%;
+    flex: 1 1 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.egy{
+    border-right: #D9DCD6 2px solid;
+}
+
+.historia img{
+    width: 30%;
+    height: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.historia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url("kepek/backgroundetc/skyharom.jpg");
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.historia aside table{
+    margin: auto;
+    text-align: left;
+}
+
+#shop{
+    width: 30%;
+    height: 20%;
+}
+
+.kepekk{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: space-around;
+    box-shadow: none;
+    align-items: center;
+}
+
+.kepekk img{
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    display: block;
+    margin: 5px 5px;
+}
+
+#nextbutton, #submitbutton{
+  background-color: #ffd60a;
+  border: 2px solid #000814;
+  border-radius: 30px;
+  box-shadow: #D9DCD6 4px 4px 0 0;
+  color: #000814;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  font-family: "Star Wars font";
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  line-height: 30px;
+  margin: auto;
+}
+
+#nextbutton:active , #submitbutton:active{
+  box-shadow: #001d3d 5px 5px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#eredmeny{
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+label.error {
+    color: #ffd60a;
+}
+
+/*reszponzivitás*/
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    nav{
+        flex-basis: 100%;
+    }
+    table{
+        flex-basis: 100%;
+    }
+    
+}
+
+@media all and (min-width: 768px) {
+    /*szamitogep*/
+    nav{
+        flex-basis: 100%;
+    }
+    table{
+        flex-basis: 100%;
+    }
+    .historia article{
+        flex: 1 1 60%;
+    }
+    .historia aside{
+        flex: 1 1 30%;
+        height: 80%;
+    }
+    .kepekk{
+        flex-basis: 20%;
+        flex-direction: row;
+    }
+    
+}

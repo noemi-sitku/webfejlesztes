@@ -1,0 +1,11 @@
+Sitku Noémi
+
+A weboldal a Star Wars univerzumból és az ebben a témában készült videójátékokból inspirálódott. A lényege, hogy egy (ebben a fiktív világban létező) bolt termékeit promótálja a 'hivatalos' weboldalán, a szöveg a tulajdonos szempontjából íródik, a webshopja még nem működik, a quiz pedig kideríti, hogy a vásárlóhoz milyen fénykard illene a legjobban.
+
+https://github.com/noemi-sitku/webfejlesztes.git
+
+A saját javascriptem a 'promo.html' oldalon található, lényegében egy quiz ami kideríti melyik fénykard illik hozzád, de csak 1 változó használatával, az űrlapelemek között pedig egy Next gombbal lehet navigálni.
+
+https://www.1001freefonts.com/movies-tv-fonts.php -> Star Wars font, a headerben, a menüben, a h1, h2, h3 tageken, a bekezdések első betűinél és a footerben
+https://fonts.google.com/specimen/Roboto+Mono?preview.text=mono%20valami%20meg%20ez%20meg%20az%0A -> Roboto Mono: minden más ami nem a Star Wars font
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sitku Noémi">
+    <meta name="description" content="Savi's shop's website, about shopping">
+    <meta name="copyright" content="only for academic purposes">
+    <link rel="icon" href="kepek/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/jquery-3.7.1.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script> $(document).ready(function() {$('#images').galleria({height: 400, width: 500}); });</script>
+    <title>Savis - beadandó</title>
+    <script src="javascript/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(function(){$("#myform").validate({
+				rules:{
+					namee:{
+						required: true,
+						minlength: 2
+					},
+                    phone:{
+						required: true,
+						pattern: true
+					},
+					emal:{
+						required: true,
+						email: true
+					},
+					
+                    szin:"required",
+                    datums:"required",
+					extra:"required",
+					felt:"required"
+				},
+
+				messages:{
+					namee:"<br> Please write your full name!",
+					phone:"<br> Please write your number as in the example!",
+					emal:"<br> Please write your email!",
+                    szin:"<br> Please choose a color!",
+                    datums:"<br> Please add a pickup date!",
+					extra:"<br> Please write yes or no!",
+					felt:"<br> You must accept the terms!",
+				},
+			});
+		});
+	</script>
+</head>
+<body>
+    <header>
+        <h1>Savi's shop</h1>
+        <h3>"This business is called Savi and Sons Salvage, not My First Priority is My other Job." - me, obviously</h3>
+    </header>
+    <div class="container"  id="hatter">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="lightsabers.html">Lightsabers</a></li>
+                <li><a href="#" class="current">Shop</a></li>
+                <li><a href="promo.html">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <article>
+            <h3>About the shopping method</h3>
+            <p>
+                As you've probably read before, the shop supports the force sensitive people, and those who just wants to experience wielding a different saber from their own. Thus we only sell the weapons in the shop and you can see below your options. Basically my friend you can choose your future lightsaber on this website and come over to the shop and pick it up yourself. If you've already done the form on the next page for the site, you can order your desired weapon here:
+            </p>
+            <form method="post" action="#" id="myform" novalidate>
+                <label for="namee">
+                    Your full name: <br>
+                    <input type="text" name="namee" id="namee">
+                </label><br>
+				<label for="phone">
+                    Your phone number (12-34-5678910): <br>
+                    <input type="tel" name="phone" id="phone" pattern="{2}-{2}-{7}">
+                </label><br>
+                <label for="emal">
+                    Your email: <br>
+                    <input type="email" id="emal" name="emal">
+                </label><br>
+                <label for="extra">
+                    Will you get extras for your weapon? <br>
+                    <input type="text" id="extra" name="extra">
+                </label><br>
+                <label for="szin">
+                    Your desired color: <br>
+                    <input type="color" id="szin" name="szin">
+                </label><br>
+				<label for="datums">
+                    Pickup date: <br>
+                    <input type="date" id="datums" name="datums">
+                </label><br>
+				<label for="felt">
+                    Do you accept the terms and conditions?<br>
+                    <input type="checkbox" id="felt" name="felt">
+                </label><br>
+                <label><input type="submit" value="Submit" id="submitbutton"></label>
+            </form>
+        </article>
+        <article id="images" class="galleria">
+            <h2>Here are your choices:</h2>
+            <img src="kepek/fotoalbum/logo.jpg" alt="Savi's lightsaber workshop" title="Shop logo"> 
+            <img src="kepek/fotoalbum/kekegy.jpg" alt="Blue lightsaber, standard blade" title="Choice 1"> 
+            <img src="kepek/fotoalbum/sargaharmas.jpg" alt="Yellow lightsaber, crossguard" title="Choice 2">
+            <img src="kepek/fotoalbum/fotoketto.jpg" alt="Blue lightsaber, standard blade" title="Choice 3">
+            <img src="kepek/fotoalbum/fotoharom.jpg" alt="Silver lightsaber, crossguard" title="Choice 4">
+            <img src="kepek/fotoalbum/fotonegy.jpg" alt="Silver lightsaber, standard blade" title="Choice 5">
+            <img src="kepek/fotoalbum/fotoot.jpg" alt="Green lightsaber, switchblade" title="Choice 6">
+            <img src="kepek/fotoalbum/fotohat.jpg" alt="Purple lightsaber, crossguard" title="Choice 7">
+            <img src="kepek/fotoalbum/fotohet.jpg" alt="Yellow lightsaber, standard blade" title="Choice 8">
+            <img src="kepek/fotoalbum/fotonyolc.jpg" alt="Red lightsaber, standard blade" title="Choice 9">
+            <img src="kepek/fotoalbum/fotokilenc.jpg" alt="Yellow lightsaber, crossguard" title="Choice 10">
+            <img src="kepek/fotoalbum/fototegy.jpg" alt="Green lightsaber, standard blade" title="Choice 11">
+            <img src="kepek/fotoalbum/fototketto.jpg" alt="Orange lightsaber, standard blade" title="Choice 12">
+            <img src="kepek/fotoalbum/fototharom.jpg" alt="Orange lightsaber, standard blade" title="Choice 13">
+            <img src="kepek/fotoalbum/fototiz.jpg" alt="The process" title="Illustration">
+        </article>            
+    </div>
+    <footer>
+        <p>Kizárólag oktatási célokat használ<br>&copy; Sitku Noémi 2023.</p>
+    </footer>
+</body>
+</html>

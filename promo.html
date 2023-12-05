@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sitku Noémi">
+    <meta name="description" content="Savi's shop's website, quiz">
+    <meta name="copyright" content="only for academic purposes">
+    <link rel="icon" href="kepek/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Savis - beadandó</title>
+</head>
+<body>
+    <header>
+        <h1>Savi's shop</h1>
+        <h3>"This business is called Savi and Sons Salvage, not My First Priority is My other Job." - me, obviously</h3>
+    </header>
+    <div class="container"  id="hatter">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="lightsabers.html">Lightsabers</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#" class="current">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" id="formm">
+        <article>
+            <h2>What lightsaber would fit you?</h2>
+            <form method="post" action="#" id="quizz" novalidate>
+                <div id="page1">
+                <p>What should I call you?</p>
+                <label>Name: <input type="text" name="nev" id="neve"></label>
+                </div>
+
+                <div id="page2"  style="display: none;">
+                <p>From the words below which ones would describe you the best?</p><br>
+                <label><input type="checkbox" name="a" id="h">Honest</label><br>
+                <label><input type="checkbox" name="b" id="p">Pessimistic</label><br>
+                <label><input type="checkbox" name="c" id="w">Wise</label><br>
+                <label><input type="checkbox" name="d" id="r">Creative</label><br>
+                </div>
+
+                <div id="page3"  style="display: none;">
+                <p>Are you a Sith or a Jedi?</p><br>
+                <label><input type="radio" name="gomb" value="sith" id="s">Sith</label><br>
+                <label><input type="radio" name="gomb" value="jedi" id="j">Jedi</label><br>
+                </div>
+
+                <div id="page4"  style="display: none;">
+                <p>Choose an animal that would match your personality!</p><br>
+                <label><select name="legordulo" size="1" id="lista">
+                        <option value="pigeon" selected>Pigeon</option>
+                        <option value="raven">Raven</option>
+                        <option value="cheetah">Cheetah</option>
+                        <option value="lion">Lion</option>
+                        <option value="horse">Horse</option>
+                </select></label><br>
+                </div>
+
+                <div id="page5" style="display: none;">
+                <p>Would you survive in an apocaliptic situation?</p><br>
+                <label><input type="radio" name="e" id="yes">Yes, without hesitation</label><br>
+                <label><input type="radio" name="e" id="maybe">Maybe, depends on the situation</label><br>
+                <label><input type="radio" name="e" id="it">It depends on the type of the apocalipse</label><br>
+                <label><input type="radio" name="e" id="probably">Probably not</label><br>
+                </div>
+
+                <div id="page6" style="display: none;">
+                <p>How good would you rate your fighting skills? (0-10)</p><br>
+                <label>0 <input type="range" max="10" name="rating" min="0" id="skill"> 10</label>
+                </div>
+
+                <div id="page7" style="display: none;">
+                <p>What is the date today? (Yes this is totally relevant to the test)</p><br>
+                <label><input type="date" name="datum"></label><br>
+                </div>
+
+                <div id="page8" style="display: none;">
+                <p>Lastly what is your email?</p>
+                <label>Email: <input type="email" name="email"></label><br>
+                </div>
+                <p></p>
+                <label>
+                    <input type="button" value="Next" id="nextbutton">
+                </label>
+            </form><br>
+            <p id="kiiras"></p>
+            <figure><img id="eredmeny" src="kepek/backgroundetc/placeholder.jpg" alt="fénykard"></figure>
+        </article>
+    </div>
+    <footer>
+        Kizárólag oktatási célokat használ<br>&copy; Sitku Noémi 2023.
+    </footer>
+    <script src="javascript/java.js"></script>
+</body>
+</html>
